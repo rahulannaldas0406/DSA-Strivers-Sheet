@@ -47,4 +47,29 @@ for i in range(0,len(arr)):
         else:
             pass
 print(ind)'''
-            
+
+
+
+
+def longest_ele(arr,k):
+    count=1
+    dist=0
+    pre_sum=0
+    sum=0
+    i=0
+    j=1
+    while i<len(arr):
+        pre_sum=arr[i]+arr[j]
+        if pre_sum==k:
+            if count>dist:
+                dist=count
+                count=0
+                if i==len(arr):
+                    return j
+        elif pre_sum>k:
+            i+=1
+        else:
+            j+=1
+arr = [1, 2, 3, 1, 1, 1, 1]
+k = 3
+print(longest_ele(arr,k))
