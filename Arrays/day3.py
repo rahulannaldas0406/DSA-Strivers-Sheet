@@ -36,7 +36,7 @@ print(left_rotate_array(a))'''
 # right rotate
 
 
-while k>0: #k=1
+'''while k>0: #k=1
     first=arr[0]
     for i in range(len(arr)-1):
         arr[i]=arr[i+1]
@@ -53,9 +53,7 @@ while k>0:
     arr[0]=first_element
     k-=1
 
-print(arr)
-
-
+print(arr)'''
 
 
 
@@ -81,8 +79,6 @@ print(arr)
 # k=4
 # for i in range(0,len(arr)):
     
-
-
 
 #To more optimization code
 

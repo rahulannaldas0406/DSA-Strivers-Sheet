@@ -77,20 +77,3 @@ for i in range(1,n+1):
 print(max_cons([1,1,0,1,1,1]))'''
 
 
-#Find the number that appears once, and the other numbers twice
-#Problem Statement: Given a non-empty array of integers arr, every element appears twice except for one. Find that single one.
-
-# def appear_ones(arr):
-#     for i in range(0,len(arr)):
-#         if arr[i] in arr:
-#             return arr[i]
-#         break
-# print(appear_ones([2,2,1]))
-
-
-
-arr=[1,2,1,3,2]
-
-for i in range(0,len(arr)):
-    if arr[i] not in arr:
-        print(arr[i])

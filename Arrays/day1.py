@@ -35,21 +35,7 @@ If the second-largest element does not exist, return -1.'''
 
 print(secondLargestElement([8,5,6,7]))'''
 
-def secondLargestElement(nums):
-    large=-1
-    sec_lar=-1
-    thi_lar=-1
-    for i in nums:
-        if i>large:
-            sec_lar=large
-            large=i
-        elif i>sec_lar and i< large:
-            sec_lar=i
-            large=
-        elif 
-    return sec_lar
 
-print(secondLargestElement([8,5,6,7]))
 
 
  
