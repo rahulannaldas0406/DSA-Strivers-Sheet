@@ -59,7 +59,17 @@ print(result)'''
 #Problem Statement: Given an integer array nums of size n, return the majority element of the array.
 #The majority element of an array is an element that appears more than n/2 times in the array. The array is guaranteed to have a majority element.
 
-arr = [7, 0, 0, 1, 7, 7, 2, 7, 7]
+arr = [1, 2, 3, 6, 6, 6, 6]
+count=1
+for i in range(0,len(arr)):
+    for j in range(i+1,len(arr)):
+        if arr[i]==arr[j]:
+            count+=1
+    if count>len(arr)//2:
+        print(arr[i])
+        break
+
+
 
 
 
