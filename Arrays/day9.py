@@ -93,7 +93,7 @@ print(arr)'''
 
 #Leaders in an Array  
 
-arr= [10, 22, 12, 3, 0, 6] 
+'''arr= [10, 22, 12, 3, 0, 6] 
 i=0
 j=i+1
 
@@ -111,4 +111,4 @@ while i<len(arr):
     if j==len(arr):
         print(arr[i],end=" ")
         i+=1
-        j=i+1
+        j=i+1'''
