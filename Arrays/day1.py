@@ -15,6 +15,15 @@
     return nums[len(nums)-1]
 print("It is A largest Element:",largestElement([3,5,7,2,1]))'''
 
+'''arr=[3,5,7,2,1]
+
+largest_num=0
+for i in range(0,len(arr)):
+    if arr[i]>largest_num:
+        largest_num=arr[i]
+
+print("longest number:",largest_num)'''
+
 
 #Second Largest Element 
 
@@ -32,7 +41,7 @@ If the second-largest element does not exist, return -1.'''
         elif i>sec_lar and i< large:
             sec_lar=i
     return sec_lar
-
+ 
 print(secondLargestElement([8,5,6,7]))'''
 
 
