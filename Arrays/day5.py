@@ -1,5 +1,3 @@
-
-
 # def problem(nums):
 #     seen=set()
 #     for i in nums:
@@ -13,7 +11,7 @@
 
 
 '''arr=[10,11,13,14,15]
-
+print(arr)
 k=int(input("enter a how many times to  rotate elements:"))
 side=str(input("enter side of rotate an array:"))
 
@@ -35,4 +33,3 @@ else:
         k-=1
 
 print(arr)'''
-
