@@ -3,6 +3,7 @@
 
 
 #arr=[1,2,1,3,2,3,4]
+
 '''count=1
 res=0
 for i in range(0,len(arr)):
@@ -48,9 +49,6 @@ for i in range(0,len(arr)):
             pass
 print(ind)'''
 
-
-
-
 def longest_ele(arr,k):
     count=1
     dist=0
@@ -58,7 +56,7 @@ def longest_ele(arr,k):
     sum=0
     i=0
     j=1
-    while i<len(arr):
+    while i<=len(arr):
         pre_sum=arr[i]+arr[j]
         if pre_sum==k:
             if count>dist:
