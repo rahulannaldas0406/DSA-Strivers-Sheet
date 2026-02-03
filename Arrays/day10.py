@@ -31,3 +31,50 @@ print(longest)'''
 #Problem Statement: Given a matrix if an element in the matrix is 0 then you will have to 
 # set its entire column and row to 0 and then return the matrix..
 
+'''this is not correct code for the problem so there is lot of drawback are there those are
+Case	Works?
+Single zero	✅
+Multiple zeros	❌
+Rectangular matrix	❌
+General solution	❌'''
+
+
+'''arr=[[1,1,0],[1,1,1],[1,1,1]]
+
+for row in range(0,len(arr)):
+    for col in range(0,len(arr)):
+        if arr[row][col]==0:
+            i=row
+            j=col
+
+for row in range(len(arr)):
+    for col in range(len(arr)):
+        if row==i or col==j:
+            arr[row][col]=0
+
+for row in arr:
+    print(*row)'''
+
+#The correct code is 
+
+arr=[[1,1,1],[1,1,0],[1,1,1]]
+m=len(arr)
+n=len(arr[0])
+for row in range(m):
+    for col in range(n):
+        if arr[row][col]==0:
+            for i in range(n):
+                if arr[i][row]!=0:
+                    arr[i][row]=-1
+            for j in range(m):
+                if arr[j][col]!=0:
+                    arr[j][col]=-1
+for i in range(m):
+    for j in range(n):
+        if arr[i][j]==-1:
+            arr[i][j]=0
+    
+for row in arr:
+    print(*row)
+            
+        
