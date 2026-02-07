@@ -24,7 +24,7 @@ Union of arr1 and arr2 is {1,2,3,4,5,6,7,8,9,10,11,12}'''
 
 '''arr1=[1,2,3,4]
 arr2=[3,4]
-arr3=[]
+arr3=[0]*len(arr1)
 k=0
 i,j=0,0
 while i < len(arr1) and j < len(arr2):
@@ -32,7 +32,7 @@ while i < len(arr1) and j < len(arr2):
         arr3[k]=arr1[i]
         k+=1
         i+=1
-    elif arr1[i]>arr2[j]:
+    elif arr1[i]>arr2[j]: 
         arr3[k]=arr2[j]
         k+=1
         j+=1
@@ -41,6 +41,8 @@ while i < len(arr1) and j < len(arr2):
         k+=1
         i+=1
         j+=1
+    if k==len(arr1):
+        break
 
 print(arr3)'''
 
@@ -52,11 +54,12 @@ print(arr3)'''
 #Problem Statement: Given an integer N and an array of size N-1 containing N-1 numbers between 1 to N. 
 #Find the number(between 1 to N), that is not present in the given array..
 
-'''arr=[2,3,4,5]
+arr=[1,2,3,4,5]
 n=5
-for i in range(1,n+1):
+first_elemnet=arr[0]
+for i in range(first_elemnet,n+1):
     if i not in arr:
-        print(i)'''
+        print(i)
 
 
 #Count Maximum Consecutive One's in the array
