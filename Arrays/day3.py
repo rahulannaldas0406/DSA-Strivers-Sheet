@@ -115,7 +115,7 @@ for i in range(0,len(arr)):
 
 print(arr)'''
 
-'''arr=[1,0,2,0,3]
+arr=[1,0,2,0,3]
 
 pos=0
 for i in range(0,len(arr)):
@@ -125,7 +125,7 @@ for i in range(0,len(arr)):
 
 for j in range(pos,len(arr)):
     arr[j]=0
-print(arr)'''
+print(arr)
 
 
 #Linear Search in C
