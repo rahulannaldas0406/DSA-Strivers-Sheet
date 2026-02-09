@@ -34,7 +34,10 @@ print(left_rotate_array(a))'''
         k-=1
     return nums
 arr=[1,2,3,4,5]
-print(leftRotate(arr,2))'''
+print(leftRotate(arr,4))'''
+
+#this is not correct solution 
+
 
 '''def leftRotate(nums,k):
     while k>0:
@@ -76,6 +79,8 @@ Union of arr1 and arr2 is {1,2,3,4,5,6,7,8,9,10,11,12}'''
 
 
 #arr=[9,9,9] #for this test case it not work poperly so instead 
+
+
 '''res=""
 for i in range(0,len(arr)):
     res+=""+ str(arr[i])
