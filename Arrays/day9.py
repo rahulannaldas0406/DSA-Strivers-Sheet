@@ -112,3 +112,8 @@ while i<len(arr):
         print(arr[i],end=" ")
         i+=1
         j=i+1'''
+
+
+mat=[[1,1,1],[1,0,1],[1,0,0]]
+
+print(mat)

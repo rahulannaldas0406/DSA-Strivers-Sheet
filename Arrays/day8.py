@@ -6,14 +6,14 @@
 #This is the logic for the problem should be prepared
 
 
-def Twosum(arr,target):
+'''def Twosum(arr,target):
     for i in range(0,len(arr)):
         need=target-arr[i]
         if need in arr:
             return True
     return False
 
-print(Twosum([2,6,5,11],14))
+print(Twosum([2,6,5,11],14))'''
 
 
 #Sort an array of 0s, 1s and 2s
@@ -59,17 +59,21 @@ print(result)'''
 #Problem Statement: Given an integer array nums of size n, return the majority element of the array.
 #The majority element of an array is an element that appears more than n/2 times in the array. The array is guaranteed to have a majority element.
 
-arr = [1, 2, 3, 6, 6, 6, 6]
+'''arr = [2,2,3,3,3,3,2]
+
 count=1
 for i in range(0,len(arr)):
+    
     for j in range(i+1,len(arr)):
+        
         if arr[i]==arr[j]:
             count+=1
+    
     if count>len(arr)//2:
         print(arr[i])
         break
+    count=1'''
 
-#revise
 
 
 

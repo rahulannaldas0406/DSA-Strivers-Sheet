@@ -87,6 +87,7 @@ for i in range(0,len(value)):
 
 print(arr)'''
 
+#PLUSE ONE Problem 
 
 '''def plusOne(arr):
    n=len(arr) 
@@ -99,7 +100,8 @@ print(arr)'''
    return [1] +arr 
 
 
-print(plusOne([9,9,9]))'''
+print(plusOne([9,0,9]))'''
+
 
 # for i in range(0,len(arr)):
 #     arr[i]=str(num[i])

@@ -35,19 +35,20 @@ print(left_rotate_array(a))'''
 # left rotate 
 # right rotate
 
+# arr=[1,2,3,4,5]
+# k=0
+# while k>0: #k=1
+#     first=arr[0]
+#     for i in range(len(arr)-1):
+#         arr[i]=arr[i+1]
+#     arr[-1]=first
+#     k-=1
+# print(arr)
 
-'''while k>0: #k=1
-    first=arr[0]
-    for i in range(len(arr)-1):
-        arr[i]=arr[i+1]
-    arr[-1]=first
-    k-=1
-print(arr)
-
-arr=[10,11,13,14,15]
+'''arr=[10,11,13,14,15]
 k=2
 while k>0:
-    first_element=len(arr)-1
+    first_element=arr[len(arr)-1]
     for i in range(len(arr)-1,-1,-1):
         arr[i]=arr[i-1]
     arr[0]=first_element
@@ -57,27 +58,24 @@ print(arr)'''
 
 
 
-# arr=[1,2,3,4,5]
-# last=arr[-1]
-# for i in range(len(arr)-1):
-#     arr[i+1]=arr[i]
-# arr[0]=last
-# print(arr)
+'''arr=[1,2,3,4,5]
+last=arr[-1]
+for i in range(len(arr)-1):
+    arr[i+1]=arr[i]
+arr[0]=last
+print(arr)'''
 
 
-# a="rahul"
-# k=3
-# rev=""
-# for i in range(0,k):
-#     rev+=""+a[i]
-# revd=""
-# for i in range(k-1,-1,-1):
-#     revd+=""+rev[i]
-# print(revd+a[k:])
+'''a="rahul"
+k=3
+rev=""
+for i in range(0,k):
+    rev+=""+a[i]
+revd=""
+for i in range(k-1,-1,-1):
+    revd+=""+rev[i]
+print(revd+a[k:])'''
 
-# arr=[2,2,3,5]
-# k=4
-# for i in range(0,len(arr)):
     
 
 #To more optimization code
@@ -86,7 +84,7 @@ print(arr)'''
     first = arr[0]
 
     for i in range(len(arr) - 1):
-        arr[i] = arr[i + 1]
+        arr[i] = arr[i+1]
 
     arr[-1] = first
     return arr
@@ -115,7 +113,7 @@ for i in range(0,len(arr)):
 
 print(arr)'''
 
-arr=[1,0,2,0,3]
+'''arr=[1,0,2,0,3]
 
 pos=0
 for i in range(0,len(arr)):
@@ -125,7 +123,7 @@ for i in range(0,len(arr)):
 
 for j in range(pos,len(arr)):
     arr[j]=0
-print(arr)
+print(arr)'''
 
 
 #Linear Search in C

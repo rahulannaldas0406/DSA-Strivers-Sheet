@@ -56,8 +56,9 @@ for row in arr:
     print(*row)'''
 
 #The correct code is 
+#This is also not 100% code it failed two test cases
 
-arr=[[1,1,1],[1,1,0],[1,1,1]]
+'''arr=[[1,1,1],[1,1,0],[1,1,1]]
 m=len(arr)
 n=len(arr[0])
 for row in range(m):
@@ -75,6 +76,24 @@ for i in range(m):
             arr[i][j]=0
     
 for row in arr:
+    print(*row)'''
+
+arr=[[1,1,1],[1,0,0],[1,1,1]]
+
+row=[0]*len(arr[0])
+col=[0]*len(arr[0])
+print(row,col)
+for i in range(len(arr)):
+    for j in range(len(arr)):
+        if arr[i][j]==0:
+            row[i]=1
+            col[j]=1
+for i in range(len(arr)):
+    for j in range(len(arr)):
+        if row[i] or col[j]:
+            arr[i][j]=0
+for row in arr:
     print(*row)
+
             
         
