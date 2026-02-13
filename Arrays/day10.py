@@ -39,6 +39,7 @@ Rectangular matrix	❌
 General solution	❌'''
 
 
+
 '''arr=[[1,1,0],[1,1,1],[1,1,1]]
 
 for row in range(0,len(arr)):
@@ -78,7 +79,7 @@ for i in range(m):
 for row in arr:
     print(*row)'''
 
-arr=[[1,1,1],[1,0,0],[1,1,1]]
+'''arr=[[1,1,1],[1,0,0],[1,1,1]]
 
 row=[0]*len(arr[0])
 col=[0]*len(arr[0])
@@ -93,7 +94,7 @@ for i in range(len(arr)):
         if row[i] or col[j]:
             arr[i][j]=0
 for row in arr:
-    print(*row)
+    print(*row)'''
 
             
         
