@@ -29,7 +29,7 @@ for row in matrix:
 '''Better approach '''
 
 
-'''arr=[[1,2,3],[4,5,6],[7,8,9]]
+arr=[[1,2,3],[4,5,6],[7,8,9]]
 
 for i in range(len(arr)):
     for j in range(len(arr)):
@@ -41,5 +41,5 @@ for row in arr:
 
 
 for row in arr:
-    print(*row)'''
+    print(*row)
 
