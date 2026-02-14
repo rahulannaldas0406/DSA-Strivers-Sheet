@@ -22,7 +22,7 @@ while j<len(arr):
 
 print(arr)'''
 
-'''nums=[1,3,5,6]  
+nums=[1,3,5,6]  
 target=6
 low=0
 high=len(nums)-1
@@ -34,4 +34,4 @@ while low<=high:
     elif nums[mid]<target:
         low=mid+1
     else:
-        high=mid-1'''
+        high=mid-1
