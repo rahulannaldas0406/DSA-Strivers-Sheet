@@ -42,7 +42,7 @@ print(res)'''
             else:
                 res=nums[i]
         return res'''
-nums=[3,6,9,1]
+'''nums=[3,6,9,1]
 nums.sort()
 diff=0
 res=nums[1] - nums[0]
@@ -54,4 +54,14 @@ while j<len(nums):
         res=diff
     i+=1
     j+=1
-print(res+1)
+print(res+1)'''
+
+n=11
+count=0
+while n>0:
+    res=n%2
+    print(res)
+    if res==1:
+        count+=1
+    n=n//2
+print(count)
