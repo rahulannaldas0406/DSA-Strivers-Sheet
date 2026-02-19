@@ -27,7 +27,7 @@ print(res)
 # If no such sub-array exists, return 0
 
 
-'''arr=[10, 5, 2, 7, 1, 9]
+arr=[10, 5, 2, 7, 1, 9]
 k = 15
 ind=0
 dist=0
@@ -46,7 +46,7 @@ for i in range(0,len(arr)):
             break
         else:
             pass
-print(ind)'''
+print(ind)
 
 '''barr = [10, 5, 2, 7, 1, 9]
 k = 15
