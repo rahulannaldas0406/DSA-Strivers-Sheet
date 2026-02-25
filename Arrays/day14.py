@@ -101,3 +101,26 @@ print(a)'''
 a=last_occurence([3, 4, 13, 13, 13, 20, 40],60)
 print(a)'''
 
+'''Count Occurrences in Sorted Array
+
+Problem Statement: You are given a sorted array containing N integers and a number X, you have to find the occurrences of X in the given array.'''
+
+def count_occurence(arr,k):
+    count=0
+    n=len(arr)
+    low=0
+    high=n-1
+    while low<=high:
+        mid=(low+high)//2
+        if arr[mid]==k:
+            count+=1
+            low+=1
+            high-=1
+        elif arr[mid]<k:
+            low+=1
+
+        else:
+            high-=1
+    return count
+a=count_occurence([2, 2 , 3 , 3 , 3 , 3 , 4],3)
+print(a)
