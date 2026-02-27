@@ -45,13 +45,15 @@ The upper bound is the smallest index, ind, where arr[ind] > x.'''
             return i
 print(upperbound([1,2,2,3],2))'''
 
+
+
 '''Search Insert Position
 
 Problem Statement: You are given a sorted array arr of distinct values and a target value x. 
 You need to search for the index of the target value in the array'''
 
-def Searchinsertion(arr,k):
+'''def Searchinsertion(arr,k):
     for i in range(len(arr)):
         if arr[i]>=k:
             return i
-print(Searchinsertion([1,2,4,7],6))
+print(Searchinsertion([1,2,4,7],6))'''
