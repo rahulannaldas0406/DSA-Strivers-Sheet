@@ -1,19 +1,18 @@
 #Largest Element
 
-
 '''Before start problem 
    1)Sample Examples
    2)Brute force 
    3)Optimal Approach'''
 #We can solve using other sorting tech but to optimize code is this right way
 
-'''def largestElement(nums):
+def largestElement(nums):
     for i in range(0,len(nums)):
         for j in range(i+1,len(nums)):
             if nums[i]>nums[j]:
                 nums[i],nums[j]=nums[j],nums[i]
     return nums[len(nums)-1]
-print("It is A largest Element:",largestElement([3,5,7,2,1]))'''
+print("It is A largest Element:",largestElement([3,5,7,2,1]))
 
 '''arr=[3,5,7,2,1]
 
