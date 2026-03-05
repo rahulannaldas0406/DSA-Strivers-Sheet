@@ -141,3 +141,4 @@ print(arr)'''
     return -1
 a=[2,3,4,1]
 print(liner_search(a,5))'''
+
