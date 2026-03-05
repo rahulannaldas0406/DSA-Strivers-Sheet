@@ -34,11 +34,11 @@ print(index)'''
 '''Problem Statement: Given an array of N integers. Every number in the array except one appears twice. 
 Find the single number in the array.'''
 
-'''arr= [1,1,2,2,3,3,4,5,5,6,6]
+arr= [1,1,2,2,3,3,4,5,5,6,6]
 res=0
 for i in arr:
     res^=i
-print(res)'''
+print(res)
 
 #Peak element in Array
 
