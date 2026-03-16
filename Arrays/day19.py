@@ -14,12 +14,13 @@ right=max(arr)
 ans=-1
 
 while left<=right:
+
     mid=(left+right)//2
     res=0
 
     for i in range(len(arr)): 
-                
-        res += math.ceil(arr[i] / mid)
+
+        res += math.ceil(arr[i]/mid)
 
     # for i in range(left,right+1):
     #     sum=
@@ -29,6 +30,7 @@ while left<=right:
         ans=mid
         right=mid-1
     else:
-        left=mid-1
+        left=mid+1
 
 print(ans)
+
