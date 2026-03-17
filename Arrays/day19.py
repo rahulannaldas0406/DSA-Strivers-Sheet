@@ -6,7 +6,7 @@ the sum of the division's result is less than or equal to the given threshold va
 
 
 
-arr=[8,4,2,3]
+'''arr=[8,4,2,3]
 limit=10
 
 left=1
@@ -32,5 +32,5 @@ while left<=right:
     else:
         left=mid+1
 
-print(ans)
+print(ans)'''
 
