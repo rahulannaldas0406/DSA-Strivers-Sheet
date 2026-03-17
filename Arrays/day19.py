@@ -34,3 +34,17 @@ while left<=right:
 
 print(ans)'''
 
+arr=[4,7,9,10]
+c=0
+k=1
+st=[]
+for i in range(1,max(arr)):
+    if i not in arr:
+        c+=1
+        st.append(i)
+    
+if c==0:
+    print(max(arr)+k)
+else:
+    print(st[k-1])
+print(st)
