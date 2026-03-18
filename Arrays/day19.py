@@ -34,7 +34,10 @@ while left<=right:
 
 print(ans)'''
 
-arr=[4,7,9,10]
+
+
+
+'''arr=[4,7,9,10]
 c=0
 k=1
 st=[]
@@ -47,4 +50,20 @@ if c==0:
     print(max(arr)+k)
 else:
     print(st[k-1])
+print(st)'''
+
+
+#correct version 
+
+arr = [4, 7, 9, 10]
+k = 4
+st = []
+i = 1
+
+while len(st) < k:
+    if i not in arr:
+        st.append(i)
+    i += 1
+
+print(st[k - 1])
 print(st)
