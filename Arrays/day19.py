@@ -6,13 +6,13 @@ the sum of the division's result is less than or equal to the given threshold va
 
 
 
-'''arr=[8,4,2,3]
-limit=10
-
-left=1
-right=max(arr)
-ans=-1
-
+arr=[8,4,2,3]                                       
+limit=10                                            
+                                                    
+left=1                                              
+right=max(arr)                                      
+ans=-1                                              
+                                                    
 while left<=right:
 
     mid=(left+right)//2
@@ -32,7 +32,7 @@ while left<=right:
     else:
         left=mid+1
 
-print(ans)'''
+print(ans)
 
 
 
@@ -55,15 +55,15 @@ print(st)'''
 
 #correct version 
 
-arr = [4, 7, 9, 10]
-k = 4
-st = []
-i = 1
+# arr = [4, 7, 9, 10]
+# k = 4
+# st = []
+# i = 1
 
-while len(st) < k:
-    if i not in arr:
-        st.append(i)
-    i += 1
+# while len(st) < k:
+#     if i not in arr:
+#         st.append(i)
+#     i += 1
 
-print(st[k - 1])
-print(st)
+# print(st[k - 1])
+# print(st)
