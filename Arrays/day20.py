@@ -5,7 +5,7 @@ The packages must be shipped within 'd' days. The weights of the packages are gi
  The packages are loaded on the conveyor belts every day in the same order as they appear in the array. The loaded weights must not exceed the maximum weight capacity of the ship. 
  Find out the least-weight capacity so that you can ship all the packages within 'd' days .''' 
 
-def findDays(self,weights, capacity):
+'''def findDays(self,weights, capacity):
         days = 1
         load = 0
 
@@ -31,4 +31,4 @@ def shipWithinDays(self, weights, days):
         else:
             low = mid + 1
 
-    return low
+    return low'''
