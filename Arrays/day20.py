@@ -5,7 +5,7 @@ The packages must be shipped within 'd' days. The weights of the packages are gi
  The packages are loaded on the conveyor belts every day in the same order as they appear in the array. The loaded weights must not exceed the maximum weight capacity of the ship. 
  Find out the least-weight capacity so that you can ship all the packages within 'd' days .''' 
 
-'''def findDays(self,weights, capacity):
+'''def findDays(weights, capacity):
         days = 1
         load = 0
 
@@ -15,20 +15,30 @@ The packages must be shipped within 'd' days. The weights of the packages are gi
                 load = w
             else:
                 load += w
-
+        #print(days,capacity)
         return days
-def shipWithinDays(self, weights, days):
+def shipWithinDays(weights, days):
     low = max(weights)
     high = sum(weights)
 
     while low <= high:
         mid = (low + high) // 2
 
-        required_days = self.findDays(weights, mid)
+        required_days = findDays(weights, mid)
 
         if required_days <= days:
             high = mid - 1
         else:
             low = mid + 1
 
-    return low'''
+    return low
+
+ans=shipWithinDays([3,5,6,7,9],5)
+print(ans)'''
+
+
+'''Aggressive Cows : Detailed Solution
+
+Problem Statement: You are given an array 'arr' of size 'n' which denotes the position of stalls. You are also given an integer 'k' which denotes the number of aggressive cows.
+You are given the task of assigning stalls to 'k' cows such that the minimum distance between any two of them is the maximum possible. Find the maximum possible minimum distance.'''
+
