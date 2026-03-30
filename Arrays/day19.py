@@ -53,17 +53,24 @@ else:
 print(st)'''
 
 
+
+'''Kth Missing Positive Number
+
+Problem Statement: You are given a strictly increasing array ‘vec’ and a positive integer 'k'. Find the 'kth' positive integer missing from 'vec'.'''
+
+
+
 #correct version 
 
-# arr = [4, 7, 9, 10]
-# k = 4
-# st = []
-# i = 1
+arr = [4, 7, 9, 10]
+k = 4
+st = []
+i = 1
 
-# while len(st) < k:
-#     if i not in arr:
-#         st.append(i)
-#     i += 1
+while len(st) < k:
+    if i not in arr:
+        st.append(i)
+    i += 1
 
-# print(st[k - 1])
-# print(st)
+print(st[k - 1])
+print(st)
