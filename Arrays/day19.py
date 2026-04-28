@@ -62,7 +62,7 @@ Problem Statement: You are given a strictly increasing array ‘vec’ and a pos
 
 #correct version 
 
-arr = [4, 7, 9, 10]
+'''arr = [4, 7, 9, 10]
 k = 4
 st = []
 i = 1
@@ -73,4 +73,27 @@ while len(st) < k:
     i += 1
 
 print(st[k - 1])
-print(st)
+print(st)'''
+
+
+def findKthMissingBinary(vec, k):
+    left, right = 0, len(vec) - 1
+    
+    while left <= right:
+        mid = (left + right) // 2
+        # Calculate missing numbers up to vec[mid]
+        missing_count = vec[mid] - (mid + 1)
+        
+        if missing_count < k:
+            left = mid + 1
+        else:
+            right = mid - 1
+            
+    # The answer is k + the number of elements before the insertion point
+    # which is effectively k + left
+    return k + left
+
+# Test
+vec = [4, 7, 9, 10]
+k = 4
+print(findKthMissingBinary(vec, k)) # Output: 5
