@@ -49,7 +49,7 @@ You are given the task of assigning stalls to 'k' cows such that the minimum dis
 3. If possible → try bigger
 4. Else → reduce'''
 
-from numpy import sort
+'''from numpy import sort
 
 
 def canWePlace(arr,dist,cows):
@@ -84,7 +84,7 @@ def aggressiveCows(arr,k):
 
     return high
 
-print(aggressiveCows([0,3,4,7,10,9],4))
+print(aggressiveCows([0,3,4,7,10,9],4))'''
 
 
 #Same pattern used in:
