@@ -76,7 +76,7 @@ print(st[k - 1])
 print(st)'''
 
 
-def findKthMissingBinary(vec, k):
+'''def findKthMissingBinary(vec, k):
     left, right = 0, len(vec) - 1
     
     while left <= right:
@@ -96,4 +96,4 @@ def findKthMissingBinary(vec, k):
 # Test
 vec = [4, 7, 9, 10]
 k = 4
-print(findKthMissingBinary(vec, k)) # Output: 5
+print(findKthMissingBinary(vec, k)) # Output: 5'''
