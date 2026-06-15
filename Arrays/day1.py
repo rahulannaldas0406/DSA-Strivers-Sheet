@@ -6,13 +6,13 @@
    3)Optimal Approach'''
 #We can solve using other sorting tech but to optimize code is this right way
 
-def largestElement(nums):
+'''def largestElement(nums):
     for i in range(0,len(nums)):
         for j in range(i+1,len(nums)):
             if nums[i]>nums[j]:
                 nums[i],nums[j]=nums[j],nums[i]
     return nums[len(nums)-1]
-print("It is A largest Element:",largestElement([3,5,7,2,1]))
+print("It is A largest Element:",largestElement([3,5,7,2,1]))'''
 
 '''arr=[3,5,7,2,1]
 
@@ -45,6 +45,21 @@ print(secondLargestElement([8,5,6,7]))'''
 
 
 
+'''def secondSmallestElement(nums):
 
+    if len(nums)==1:
+        return nums[0]
+    
+    smallest=float('inf')
+    sec_sml=float('inf')
+
+    for i in nums:
+        if i<=smallest:
+            sec_sml=smallest
+            smallest=i
+        elif i>=smallest and i<=sec_sml:
+            sec_sml=i
+    return sec_sml
  
+print(secondSmallestElement([8,5,5,7,2]))'''
 
