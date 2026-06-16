@@ -18,6 +18,7 @@ Explanation:
  Initially, nums = [-1, 0, 3, 6]  
 Rotating once to the left results in nums = [0, 3, 6, -1].'''
 
+
 '''def left_rotate_array(n):
     arr=n
     j=0
@@ -32,6 +33,7 @@ Rotating once to the left results in nums = [0, 3, 6, -1].'''
 a=[1,2,3,4,5]
 print(left_rotate_array(a))'''
 
+
 # left rotate 
 # right rotate
 
@@ -45,6 +47,7 @@ print(left_rotate_array(a))'''
 #     k-=1
 # print(arr)
 
+
 '''arr=[10,11,13,14,15]
 k=2
 while k>0:
@@ -55,7 +58,6 @@ while k>0:
     k-=1
 
 print(arr)'''
-
 
 
 '''arr=[1,2,3,4,5]
