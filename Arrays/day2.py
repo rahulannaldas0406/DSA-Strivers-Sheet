@@ -6,7 +6,7 @@ Output: True.
 Explanation: The given array is sorted i.e Every element in the array is smaller than or equals to its next values, So the answer is True.
 '''
 
-def check_sort(arr):
+'''def check_sort(arr):
     value=False
     n=len(arr)
     for i in range(n-1):
@@ -17,9 +17,11 @@ def check_sort(arr):
                 value=False
                 break
     return value
-print(check_sort([1,2,3,4]))
+print(check_sort([1,2,3,4]))'''
+
 
 #I use bubble sort to solve this problem so the chatgpt gave few drawbacks and it gives a new optimization code 
+
 
 '''def check_sort(arr):
     n = len(arr)
@@ -28,6 +30,7 @@ print(check_sort([1,2,3,4]))
             return False
     return True
 print(check_sort([1,2,3,4]))'''
+
 
 #Remove Duplicates in-place from Sorted Array
 
@@ -66,3 +69,4 @@ print(arr[:k])'''
 # pairs = {(i, j) for i in range(1, 3) for j in range(1, 3)}
 # print(pairs)
 
+    
