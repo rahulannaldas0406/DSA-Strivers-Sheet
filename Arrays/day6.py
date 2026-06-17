@@ -22,7 +22,7 @@ Distnict Elements in arr1 are : 1,6,7,8,9,10
 Distnict Elemennts in arr2 are : 11,12
 Union of arr1 and arr2 is {1,2,3,4,5,6,7,8,9,10,11,12}'''
 
-arr1=[1,2]
+'''arr1=[1,2]
 arr2=[3,4]
 arr3=[0]*len(arr1)
 k=0
@@ -46,7 +46,7 @@ while i < len(arr1) and j < len(arr2):
 
 print(arr3)
 
-#Find the missing number in an array
+#Find the missing number in an array'''
 
 
 
