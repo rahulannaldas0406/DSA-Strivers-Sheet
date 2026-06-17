@@ -2,7 +2,7 @@
 #Problem Statement: Given a non-empty array of integers arr, every element appears twice except for one. Find that single one.
 
 
-arr=[2,2,3,2]
+'''arr=[2,2,3,2]
 
 count=1
 res=0
@@ -14,7 +14,7 @@ for i in range(0,len(arr)):
         count=0
     else:
         res=arr[i]
-print(res)
+print(res)'''
 
 # res=0
 # for i in arr:
@@ -48,7 +48,7 @@ for i in range(0,len(arr)):
             pass
 print(ind)
 
-'''barr = [10, 5, 2, 7, 1, 9]
+barr = [10, 5, 2, 7, 1, 9]
 k = 15
 
 left = 0
@@ -70,7 +70,7 @@ for right in range(len(arr)):
             max_len = length
             end_index = right
 
-# print(end_index)'''
+print(end_index)
 
     
 '''def longest_ele(arr,k):
