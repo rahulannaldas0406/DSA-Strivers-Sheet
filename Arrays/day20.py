@@ -1,99 +1,38 @@
-#Capacity to Ship Packages within D Days
+'''Next Permutation
 
-'''Problem Statement: You are the owner of a Shipment company. You use conveyor belts to ship packages from one port to another. 
-The packages must be shipped within 'd' days. The weights of the packages are given in an array 'of weights'.
- The packages are loaded on the conveyor belts every day in the same order as they appear in the array. The loaded weights must not exceed the maximum weight capacity of the ship. 
- Find out the least-weight capacity so that you can ship all the packages within 'd' days .''' 
+1. Traverse from right.
+2. Find first index i where nums[i] < nums[i+1].
+   -> breakpoint
 
-'''def findDays(weights, capacity):
-        days = 1
-        load = 0
+3. Find the smallest element greater than nums[i]
+   on the right side.
 
-        for w in weights:
-            if load + w > capacity:
-                days += 1
-                load = w
-            else:
-                load += w
-        #print(days,capacity)
-        return days
-def shipWithinDays(weights, days):
-    low = max(weights)
-    high = sum(weights)
+4. Swap them.
 
-    while low <= high:
-        mid = (low + high) // 2
+5. Reverse everything after i.
 
-        required_days = findDays(weights, mid)
+Special case:
+If no breakpoint exists,
+reverse the whole array.'''
 
-        if required_days <= days:
-            high = mid - 1
-        else:
-            low = mid + 1
-
-    return low
-
-ans=shipWithinDays([3,5,6,7,9],5)
-print(ans)'''
-
-
-'''Aggressive Cows : Detailed Solution
-
-Problem Statement: You are given an array 'arr' of size 'n' which denotes the position of stalls. You are also given an integer 'k' which denotes the number of aggressive cows.
-You are given the task of assigning stalls to 'k' cows such that the minimum distance between any two of them is the maximum possible. Find the maximum possible minimum distance.'''
-
-
-'''BS on Answer:
-1. Define search space
-2. Check feasibility (greedy)
-3. If possible → try bigger
-4. Else → reduce'''
-
-'''from numpy import sort
-
-
-def canWePlace(arr,dist,cows):
-    last=arr[0]
-    count_cows=1
-
-    for i in range(1,len(arr)):
-        if arr[i]-last>=dist:
-            count_cows+=1
-            last=arr[i]
-
-        if count_cows>=cows:
-            return True
+arr=[1,2,3]
+ind=len(arr)-2
+for i in range(len(arr)-1,-1,-1):
+    if arr[ind]<arr[i]:
+        bp=arr[ind]
+        break
     else:
-        return False
-    
-def aggressiveCows(arr,k):
-    stalls=sort(arr) 
-    n=len(stalls)
+        ind-=1
 
-    low=1
-    high=stalls[n-1]-stalls[0]
+greater=bp
+for i in range(ind,len(arr)):
+    if arr[i]>bp:
+        greater=arr[i]
+        ind1=i
 
-    while low<=high:
-        mid=(low+high)//2
+#Swap doing 
+arr[i],arr[ind1]=arr[ind1],arr[i]
 
-        if canWePlace(stalls,mid,k):
-            low=mid+1
+#reverse doing from breakpoint 
 
-        else:
-            high=mid-1
-
-    return high
-
-print(aggressiveCows([0,3,4,7,10,9],4))'''
-
-
-#Same pattern used in:
-
-# Aggressive Cows 🐄
-# Koko Eating Bananas 🍌
-# Allocate Books 📚
-# Painters Partition 🎨
-# Ship Packages 🚢
-
-
-
+rev=arr[::-ind]
