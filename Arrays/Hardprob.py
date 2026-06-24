@@ -56,12 +56,13 @@ while j<len(nums):
     j+=1
 print(res+1)'''
 
-n=11
-count=0
-while n>0:
-    res=n%2
-    print(res)
-    if res==1:
-        count+=1
-    n=n//2
-print(count)
+# n=11
+# count=0
+# while n>0:
+#     res=n%2
+#     print(res)
+#     if res==1:
+#         count+=1
+#     n=n//2
+# print(count)
+
