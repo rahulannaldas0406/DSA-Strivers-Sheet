@@ -35,4 +35,4 @@ arr[i],arr[ind1]=arr[ind1],arr[i]
 
 #reverse doing from breakpoint 
 
-#rev=arr[::-ind]
+rev=arr[::-ind]
