@@ -52,3 +52,4 @@ window_sum=0
 # print(expsum)
 # print(sum(arr))
 
+#Serialization/Deserialization neet code Encode and decode
