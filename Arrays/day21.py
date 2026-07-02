@@ -53,3 +53,4 @@ window_sum=0
 # print(sum(arr))
 
 #Serialization/Deserialization neet code Encode and decode
+print(10.0//3)
