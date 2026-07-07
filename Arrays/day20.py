@@ -15,7 +15,7 @@ Special case:
 If no breakpoint exists,
 reverse the whole array.'''
 
-arr=[1,2,3]
+'''arr=[1,2,3]
 ind=len(arr)-2
 for i in range(len(arr)-1,-1,-1):
     if arr[ind]<arr[i]:
@@ -32,7 +32,5 @@ for i in range(ind,len(arr)):
 
 #Swap doing 
 arr[i],arr[ind1]=arr[ind1],arr[i]
+print(arr)'''
 
-#reverse doing from breakpoint 
-
-rev=arr[::-ind]
