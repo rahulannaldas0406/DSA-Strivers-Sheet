@@ -53,4 +53,18 @@ window_sum=0
 # print(sum(arr))
 
 #Serialization/Deserialization neet code Encode and decode
-print(10.0//3)
+# arr=[2,4,2,4,3,1]
+# arr1=[]
+# p_sum=0
+# max_sum=0
+# for i in arr:
+#     if i not in arr1:
+#         p_sum+=i
+#         arr1.append(i)
+#     else:
+#         max_sum=max(p_sum,max_sum)
+#         arr1=[]
+#         p_sum=0
+#         p_sum+=i
+#         arr1.append(i)
+# print(max_sum)
