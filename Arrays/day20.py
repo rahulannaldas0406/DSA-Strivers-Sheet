@@ -1,3 +1,20 @@
+#Allocate Minimum Number of Pages
+# Rules
+#  Each student gets at least one book.
+#  Each book should be allocated to only one student.
+#  Book allocation should be in a contiguous manner.
+
+
+
+
+
+
+
+
+
+
+
+
 '''Next Permutation
 
 1. Traverse from right.
