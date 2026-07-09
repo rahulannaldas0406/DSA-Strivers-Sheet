@@ -4,10 +4,57 @@
 #  Each book should be allocated to only one student.
 #  Book allocation should be in a contiguous manner.
 
+'''class Solution:
+    def allocatePages(self,arr,k,mid):
+        self.k=k
+        self.arr=arr
+        self.mid=mid
+        st=1
+        res=0
+
+        for i in range(len(arr)):
+            if res+arr[i]<=mid:
+                res+=arr[i]
+            else:
+                st+=1
+                res=arr[i]
+                
+        
+        if st<=k:
+            return True
+        else:
+            return False
 
 
+    def binarySearch(self,arr,k):
+        arr.sort()
+        
+        low=arr[0]
+        high=sum(arr)
+        ans=-1
+        while low<=high:
+            mid=(low+high)//2
+            if self.allocatePages(arr,k,mid):
+               high=mid-1
+               
+            else:
+                low=mid+1
+                ans=low
+        return ans
 
+arr=[12,34,67,90]
+k=2
+obj=Solution()
+print(obj.binarySearch(arr,k))'''
 
+# arr=[1,2,3,4]
+# arr.reverse()
+# print(arr)
+
+s = "the sky is blue"
+arr=s.split()
+arr.reverse()
+print(" ".join(arr).strip())
 
 
 
