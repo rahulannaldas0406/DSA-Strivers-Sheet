@@ -10,7 +10,7 @@ Explanation:
 Removing the outermost layer yields: "(())"'''
 
 
-def removeOuterParentheses(s) :
+'''def removeOuterParentheses(s) :
         res=""
         level=0
         for char in s:
@@ -27,4 +27,19 @@ def removeOuterParentheses(s) :
                 
         return res
 s = "(()())(())"
-print(removeOuterParentheses(s))
+print(removeOuterParentheses(s))'''
+
+
+s="5206"
+st=""
+prev=0
+
+for i in s:
+    if int(i)!=0 and int(i)%2!=0:
+        st+=i
+        if prev>int(st):
+            prev=int(st)
+    else:
+        st=""
+        prev=0
+print(st)
