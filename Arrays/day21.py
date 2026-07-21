@@ -8,10 +8,10 @@
 
 # print(res)
 
-arr=[2,4,9,3]
-res=[0]*len(arr)
+# arr=[2,4,9,3]
+# res=[0]*len(arr)
 
-window_sum=0
+# window_sum=0
 # k=2
 # for i in range(1,k+1):
 #     window_sum+=arr[i]
@@ -69,43 +69,3 @@ window_sum=0
 #         arr1.append(i)
 # print(max_sum)
 
-'''from collections import deque
-from typing import Optional, List
-
-# Definition for a Node.
-class Node:
-    def __init__(self, val = 0, neighbors = None):
-        self.val = val
-        self.neighbors = neighbors if neighbors is not None else []
-
-class Solution:
-    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
-        if not node:
-            return None
-        
-        # Dictionary to map original nodes to their clones
-        # Key: original node, Value: cloned node
-        visited = {}
-        
-        # Initialize the queue with the starting node
-        queue = deque([node])
-        
-        # Create the clone for the starting node and add to visited map
-        visited[node] = Node(node.val)
-        
-        while queue:
-            current = queue.popleft()
-            
-            # Iterate through neighbors of the current node
-            for neighbor in current.neighbors:
-                if neighbor not in visited:
-                    # If neighbor hasn't been cloned yet, create a clone
-                    visited[neighbor] = Node(neighbor.val)
-                    queue.append(neighbor)
-                
-                # Add the cloned neighbor to the current node's clone neighbors
-                visited[current].neighbors.append(visited[neighbor])
-        
-        # Return the clone of the starting node
-        return visited[node]'''
-        
