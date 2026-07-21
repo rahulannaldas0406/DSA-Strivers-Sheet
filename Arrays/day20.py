@@ -4,7 +4,7 @@
 #  Each book should be allocated to only one student.
 #  Book allocation should be in a contiguous manner.
 
-'''class Solution:
+class Solution:
     def allocatePages(self,arr,k,mid):
         self.k=k
         self.arr=arr
@@ -42,23 +42,10 @@
                 ans=low
         return ans
 
-arr=[12,34,67,90]
+arr=[10,20,30,40]
 k=2
 obj=Solution()
-print(obj.binarySearch(arr,k))'''
-
-# arr=[1,2,3,4]
-# arr.reverse()
-# print(arr)
-
-s = "the sky is blue"
-arr=s.split()
-arr.reverse()
-print(" ".join(arr).strip())
-
-
-
-
+print(obj.binarySearch(arr,k))
 
 
 
