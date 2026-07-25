@@ -131,3 +131,58 @@ s="foo"
 t="bar"
 
 print(isomorphic(s,t))'''
+
+#Check if one string is rotation of another
+
+'''Problem Statement: Given two strings s and goal, return true if and only if s can become goal after some number of shifts on s.
+A shift on s consists of moving the leftmost character of s to the rightmost position. For example, if s = "abcde", then it will be "bcdea" after one shift.'''
+
+#This is the optimize code O(n) so 
+
+#Interview explain 
+
+'''Imagine the string is arranged in a circle.
+
+Every rotation simply changes the starting point while preserving the order.
+
+Concatenating the string with itself contains every possible starting point exactly once, so every valid rotation appears as a substring of s + s.'''
+
+#I Saw this trick in  leetcode 
+
+#If they could ask is there any other approach to solve without s+s 
+
+''' Yes,Rotate the string one position at a time.
+Compare it with goal ''' # Time complexity is O(n^2)
+
+
+'''def rotate(s,goal):
+    value=s+s
+
+    if len(s) != len(goal):
+        return False
+
+    if goal in value:
+        return True
+    else:
+        return False
+
+s="abc"
+goal="ab"
+print(rotate(s,goal))'''
+
+
+#Check if two Strings are anagrams of each other
+
+'''Problem Statement: Given two strings, check if two strings are anagrams of each other or not.'''
+
+n=267
+s=1
+# for i in str(n):
+#     s=s*int(i)
+# print(s)
+
+while n>0:
+    digt=n%10
+    s=s*digt
+    n=n//10
+print(s)
