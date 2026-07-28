@@ -175,14 +175,51 @@ print(rotate(s,goal))'''
 
 '''Problem Statement: Given two strings, check if two strings are anagrams of each other or not.'''
 
-n=267
-s=1
-# for i in str(n):
-#     s=s*int(i)
-# print(s)
 
-while n>0:
-    digt=n%10
-    s=s*digt
-    n=n//10
-print(s)
+'''def isAnagram(s, t):
+
+    if len(s) != len(t):
+        return False
+
+    count = {}
+
+    for ch in s:
+        if ch in count:
+            count[ch] += 1
+        else:
+            count[ch] = 1
+
+    for ch in t:
+        if ch in count:
+            count[ch] -= 1
+        else:
+            return False
+
+    for value in count.values():
+        if value != 0:
+            return False
+
+    return True
+
+
+print(isAnagram("listen", "silent"))'''
+
+s="tree"
+
+freq = {}
+
+for ch in s:
+    freq[ch] = freq.get(ch, 0) + 1
+
+ans = sorted(freq.items(), key=lambda x: (-x[1], x[0]))
+
+# print(ans)
+
+
+# arr=[]
+
+# for i in ans:
+#     arr.append(i[0])
+# print(arr)
+
+# arr = [ch for ch, count in ans]
