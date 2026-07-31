@@ -204,22 +204,32 @@ print(rotate(s,goal))'''
 
 print(isAnagram("listen", "silent"))'''
 
-s="tree"
+'''s="tree"
 
 freq = {}
 
 for ch in s:
     freq[ch] = freq.get(ch, 0) + 1
 
-ans = sorted(freq.items(), key=lambda x: (-x[1], x[0]))
-
-# print(ans)
+ans = sorted(freq.items(), key=lambda x: (-x[1], x[0]))'''
 
 
-# arr=[]
+#Maximum Nesting Depth of Parenthesis
 
-# for i in ans:
-#     arr.append(i[0])
-# print(arr)
+'''Problem Statement: Given a valid parentheses string s, return the nesting depth of s. The nesting depth is the maximum number of nested parentheses'''
 
-# arr = [ch for ch, count in ans]
+def nested(s):
+    max_count=0
+    count=0
+    for i in s:
+        if i=="(":
+            count+=1
+        elif i==")":
+            
+            count-=1
+        max_count=max(max_count,count)
+    return max_count
+
+
+s ="(1)+((2))+((((3))))"
+print(nested(s))
