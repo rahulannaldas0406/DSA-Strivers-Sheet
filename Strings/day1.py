@@ -218,7 +218,7 @@ ans = sorted(freq.items(), key=lambda x: (-x[1], x[0]))'''
 
 '''Problem Statement: Given a valid parentheses string s, return the nesting depth of s. The nesting depth is the maximum number of nested parentheses'''
 
-def nested(s):
+'''def nested(s):
     max_count=0
     count=0
     for i in s:
@@ -232,4 +232,101 @@ def nested(s):
 
 
 s ="(1)+((2))+((((3))))"
-print(nested(s))
+print(nested(s))'''
+
+#Find the longest substring without repeating characters 
+
+'''a="abcadecf"
+
+sub_str=""
+for i in range(len(a)):
+    st=""
+    for j in range(i,len(a)):
+        if a[j] not in sub_str:
+            st+=a[j]
+        else:
+            break
+
+    if len(st)>len(sub_str):
+        sub_str=st
+    if i>len(sub_str):
+        break
+print(sub_str)'''
+
+
+#Recursive Implementation of atoi()
+
+'''Problem Statement: Implement the function myAtoi(s) which converts the given string s to a 32-bit signed integer (similar to the C/C++ atoi function).
+
+Steps to Implement: 1. First, ignore any leading whitespace characters ' ' until the first non-whitespace character is found.
+2. Check the next character to determine the sign. If it’s a '-', the number should be negative. If it’s a '+', the number should be positive. If neither is found, assume the number is positive.
+3. Read the digits and convert them into a number. Stop reading once a non-digit character is encountered or the end of the string is reached. Leading zeros should be ignored during conversion.
+4. The result should be clamped within the 32-bit signed integer range: [-2147483648, 2147483647]. If the computed number is outside this range, return -2147483648 if the number is less than -2147483648, or return 2147483647 if the number is greater than 2147483647.
+5. Finally, return the computed number after applying all the above steps.'''
+
+#My logic is 
+
+'''a="-123"
+num="123456789"
+
+ans=""
+if a[0]=="+":
+    for i in range(1,len(a)):
+        if a[i] not in num:
+            print(0)
+            break
+        else:
+            ans+=a[i]
+
+elif a[0]=="-":
+    ans="-"
+    for i in range(1,len(a)):
+        if a[i] not in num:
+            print(0)
+            break
+        else:
+            ans+=a[i]
+print(ans)'''
+
+#But the logic is not correct so let me copy from the TUF 
+
+'''INT_MIN=-2**31
+INT_MAX=2**31-1
+
+def helper(s,i,num,sign):
+    if i>=len(s) or not s[i].isdigit():
+        return sign *num
+
+    num=num*10+int(s[i])
+
+    if sign*num<=INT_MIN: return INT_MIN
+    if sign*num>=INT_MAX: return INT_MAX 
+
+    return helper(s,i+1,num,sign)
+
+def myAtio(s):
+    i=0
+
+    while i<len(s) and s[i]==' ':
+        i+=1
+    sign=1
+
+    if i<len(s) and (s[i]=='+' or s[i]=='-'):
+        sign=-1 if s[i] =='-' else 1 
+        i+=1
+
+    return helper(s,i,0,sign)
+
+if __name__=='__main__':
+    s="  -12345"
+    print(myAtio(s))'''
+
+
+
+
+
+
+        
+    
+        
+
