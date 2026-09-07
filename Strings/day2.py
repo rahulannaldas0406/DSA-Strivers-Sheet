@@ -3,21 +3,34 @@
 Problem Statement: You are given a string s and a positive integer k.
 Return the number of substrings that contain exactly k distinct characters.'''
 
-def count_substr(s,k):
-    a=set()
-    sub_str=""
-    count_substr+=1
-    valid_arr=[]
-    right=1
-    for left in range(len(s)):
-        sub_str+=s[left]
+
+# def brute_force(arr,k):
+#     count=0
+#     for i in range(len(arr)):
+#         for j in range(i,len(arr)):
+#             distict=set(arr[i:j+1])
+
+#             if len(distict)==k:
+#                 count+=1
+#     return count 
+
+
+'''def Better_code(s,k):
+    count=0
+    for i in range(len(s)):
+        freq={}
+        for j in range(i,len(s)):
+            freq[s[j]]=freq.get(s[j],0)+1
+
+            if len(freq)==k:
+                count+=1
+    return count
         
 
-
-    
-
-
-
-s="pqpqs"
+a="pqpqs"
 k=2
-print(count_substr(s,k))
+print(Better_code(a,k))'''
+
+
+
+
