@@ -52,7 +52,7 @@
 # print(expsum)
 # print(sum(arr))
 
-#Serialization/Deserialization neet code Encode and decode
+
 # arr=[2,4,2,4,3,1]
 # arr1=[]
 # p_sum=0
