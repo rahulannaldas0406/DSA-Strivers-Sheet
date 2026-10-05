@@ -34,7 +34,7 @@ print(left_rotate_array(a))'''
         k-=1
     return nums
 arr=[1,2,3,4,5]
-print(leftRotate(arr,4))'''
+print(leftRotate(arr,2))'''
 
 
 #this is not correct solution 
@@ -42,10 +42,10 @@ print(leftRotate(arr,4))'''
 
 '''def leftRotate(nums,k):
     while k>0:
-        indo=nums[len(nums)-1]
-        nums[0]=indo
+        first=nums[k]
+        last_num=len(nums)-k
         for i in range(1,len(nums)-1):
-            nums[i]=nums[i]
+            nums[i+1]=nums[i]
         nums[len(nums)-1]=indo
         k-=1
     return nums
