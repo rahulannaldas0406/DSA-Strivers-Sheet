@@ -10,7 +10,7 @@ for i in nums:
     #print(max_sub)
     if max_sub>max:
         max=max_sub
-    if max_sub < 0:          # 👈 ONLY NEW LINE
+    if max_sub < 0:          #  ONLY NEW LINE
         max_sub = 0
 print(max)'''
 
